@@ -1,0 +1,67 @@
+.footer{
+
+    text-align: center;
+    padding: 70px 0;
+
+    &__logo{
+        margin-bottom: 30px;
+        h1{
+            a{
+                span{
+                    font-weight: bold;
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+
+    &__nav{
+        margin-bottom: 30px;
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            transform: all .3s;
+
+            @include mq("sp"){
+                flex-direction: column;
+            }
+
+            li{
+                margin-right: 30px;
+                transition: all .3s;
+
+                @include mq("sp"){
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                a{
+                    font-size: rem(12);
+                    line-height: 1em;
+                    font-weight: 500;
+                    transition: all .3s;
+
+                    @include mq("sp"){
+                        font-size: rem(10);
+                    }
+                }
+            }
+        }
+    }
+
+    &__small{
+        small{
+            font-size: rem(12);
+            transition: all .3s;
+
+            @include mq("sp"){
+                font-size: rem(10);
+            }
+        }
+    }
+}

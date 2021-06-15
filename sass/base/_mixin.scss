@@ -1,0 +1,26 @@
+
+$layout-width-inner: 1024px;
+
+
+$breakpoints: (
+  "sp": "screen and (max-width: 768px)",
+  "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
+  "pc": "screen and (min-width: #{$layout-width-inner})",
+);
+
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+$baseFontSize: 16;
+  @function rem($pixels) {
+    @return $pixels / $baseFontSize * 1rem;
+  }
+
+$baseWidth : 1280;
+  @function vw($pixelsVw) {
+      @return $pixelsVw / $baseWidth * 100vw;
+  }
