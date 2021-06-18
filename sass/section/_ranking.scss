@@ -36,12 +36,18 @@
         margin-bottom: 70px;
         width: calc(33.3333333% - 34px);
         transition: all .3s;
+        padding: 15px 10px;
 
         &:nth-child(3n){
             margin-right: 0;
         }
 
-        @include mq("sp"){
+        &:hover{
+            box-shadow: 5px 5px 15px -5px #777777;
+        }
+
+        @include mq("tab"){
+
             width: calc(50% - 15px);
 
             &:nth-child(3n){
@@ -51,6 +57,11 @@
             &:nth-child(2n){
                 margin-right: 0;
             }
+        }
+
+        @include mq("sp"){
+            width: 100%;
+            padding: 30px 20px;
         }
     }
 
@@ -79,6 +90,9 @@
             font-size: rem(10);
             font-weight: bold;
 
+            @include mq("sp"){
+                font-size: rem(12);
+            }
         }
     }
 }

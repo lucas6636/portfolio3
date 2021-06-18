@@ -38,6 +38,12 @@
         margin-bottom: 30px;
         width: calc(25% - 34px);
         transition: all .3s;
+        padding: 15px 10px;
+
+
+        &:hover{
+            box-shadow: 5px 5px 15px -5px #777777;
+        }
 
         &:nth-child(4n){
             margin-right: 0;

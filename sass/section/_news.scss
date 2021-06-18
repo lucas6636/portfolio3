@@ -2,7 +2,7 @@
     margin-top: 150px;
 
     @include mq("sp"){
-        margin-top: 0px;
+        margin-top: 50px;
     }
 
     &__contents{
@@ -40,6 +40,7 @@
 
                 @include mq("sp"){
                     font-size: rem(12);
+                    color: #333;
                 }
 
                 time{
@@ -53,9 +54,4 @@
             }
         }
     }
-}
-
-.bx-wrapper{
-    box-shadow: none;
-    border: none;
 }
